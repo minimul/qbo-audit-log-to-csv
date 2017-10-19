@@ -1,8 +1,8 @@
 {
-  "name": "__MSG_appName__",
+  "name": "QboAuditLog to CSV",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "__MSG_appDescription__",
+  "description": "QboAuditLog to CSV",
   "icons": {
     "16": "images/icon-16.png",
     "128": "images/icon-128.png"
@@ -15,15 +15,14 @@
     ]
   },
   "permissions": [
-    "tabs",
-    "http://*/*",
-    "https://*/*"
+    "activeTab",
+    "webNavigation",
+    "https://*.intuit.com/*/*"
   ],
   "content_scripts": [
     {
       "matches": [
-        "http://*/*",
-        "https://*/*"
+        "https://*.intuit.com/*/*"
       ],
       "js": [
         "scripts/contentscript.js"

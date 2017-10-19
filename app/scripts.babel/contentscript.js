@@ -99,6 +99,9 @@ class QboAuditLog {
 
 }
 
-console.log('QboAudit code running');
-new QboAuditLog()
+chrome.extension.onRequest.addListener((request, sender, sendResponse) => {
+  //console.log('request', request)
+  if (request == 'runQboAuditLog') 
+    new QboAuditLog()
+}); 
 
