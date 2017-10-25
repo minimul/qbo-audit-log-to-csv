@@ -8,7 +8,7 @@ You can export the Audit Log Table to CSV as well as remove duplicates (based on
 
 ### Getting Started
 
-- `git clone git://git@github.com:minimul/qbo-audit-log-to-csv.git`
+- `git clone git@github.com:minimul/qbo-audit-log-to-csv.git`
 - `cd qbo-audit-log-to-csv`
 - Within Chrome go to `chrome://extensions`
   - Install the extension in developer mode.
